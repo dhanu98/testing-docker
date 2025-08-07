@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: dhananjaytupe/frontend-image:${FE_IMAGE_TAG}
+    ports:
+      - "80:80"
+    restart: unless-stopped
